@@ -44,11 +44,7 @@ public class ScriptPrincipal : MonoBehaviour
             Regreso();
         }
         Debug.Log(contador);
-    }
-        //Suma de puntos de amor en base a la alimentación:
-    private void OnTriggerEnter(Collider other)
-    {
-        
+        Debug.Log(amor);
     }
 
 }
