@@ -6,6 +6,7 @@ TagManager:
   tags:
   - comida
   - nocomida
+  - suelo
   layers:
   - Default
   - TransparentFX
