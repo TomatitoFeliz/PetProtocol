@@ -6,7 +6,7 @@ public class Acariciar : MonoBehaviour
 {
     [SerializeField]
     GameObject particulas;
-    //float contador = 2;
+    float contador = 2;
     float horaActual;
     float cadaDosHoras;
     float cada24Horas;
@@ -28,27 +28,27 @@ public class Acariciar : MonoBehaviour
         cada24Horas = horaActual + vcHoras;
         cada30min = cada24Horas + tMin;
     }
-    /*public void Contador()
+    public void Contador()
     {
         if (contador >= 0)
         {
 
             contador -= Time.deltaTime;
         }
-    }*/
+    }
     private void Update()
     {
         PlayerPrefs.SetFloat("tiempoparacaricia", cada24Horas);
         PlayerPrefs.SetFloat("tiemporestacaricia", cada30min);
         PlayerPrefs.SetFloat("tiempopuntoscaricia", cadaDosHoras);
         Debug.Log(Time.time);
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            //Invoke("Contador", 0);
+            Invoke("Contador", 0);
             Vector3 pos = Input.mousePosition;
             Ray rayo = Camera.main.ScreenPointToRay(pos);
             RaycastHit hitinfo;
-            if (Physics.Raycast(rayo, out hitinfo) == true /*&& contador <= 0*/)
+            if (Physics.Raycast(rayo, out hitinfo) == true && contador <= 0)
             {
                 if (hitinfo.collider.tag.Equals("Slime"))
                 {
@@ -60,7 +60,7 @@ public class Acariciar : MonoBehaviour
                         cada24Horas = horaActual + vcHoras;
                     }
                     Instantiate(particulas, new Vector3(0, 1, -2.5f), Quaternion.identity);
-                    //contador = 2;
+                    contador = 2;
                 }
             }
         }
