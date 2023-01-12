@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 9201582041105620230}
   m_Layer: 0
   m_Name: SlimeM02
-  m_TagString: Untagged
+  m_TagString: Slime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3198502390492704377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -172,6 +172,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad38971b468c8a458335683ac8d9d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1: {fileID: 400761213570274729, guid: 517bef10f60b4554d82333691dc661dc, type: 3}
+  p2: {fileID: 3198502390492704377}
+  p3: {fileID: 6688149642241925542, guid: ffa103c83f11ce640bea865daaf18c55, type: 3}
+  p4: {fileID: 873531700701352353, guid: 77a9ef030fe282d4eb2995ed9316848b, type: 3}
+  tresh: 10
+  veintem: 10
+  x: 1
 --- !u!1 &4223262636022095585
 GameObject:
   m_ObjectHideFlags: 0

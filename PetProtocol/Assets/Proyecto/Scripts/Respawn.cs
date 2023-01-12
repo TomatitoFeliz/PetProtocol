@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    public GameObject comida, nocomida;
+    public GameObject comida, nocomida, hud, movimiento;
     float timer = 4;
     int numero;
-    int comidan = 0;
-    int nocomidan = 0;
+    public static int comidan = 0;
+    public static int nocomidan = 0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,12 +40,19 @@ public class Respawn : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        hud.gameObject.SetActive(true);
+        movimiento.gameObject.SetActive(false);
+    }
     public void repetir()
     {
         InvokeRepeating("RespawnAlimentar", 0f, 1f);
     }
     public void RespawnAlimentar()
     {
+        hud.gameObject.SetActive(false);
+        movimiento.gameObject.SetActive(true);
         Update();
         if (timer < 1)
         {
@@ -73,9 +80,18 @@ public class Respawn : MonoBehaviour
             {
                 RespawnAlimentar();
             }
+            if (comidan == 4 && nocomidan == 3)
+            {
+                hud.gameObject.SetActive(true);
+                movimiento.gameObject.SetActive(false);
+                CancelInvoke("RespawnAlimentar");
+                comidan = 0;
+                nocomidan = 0;
+
+            }
         }
-        Debug.Log(timer);
-        Debug.Log(numero);
+        //Debug.Log(timer);
+        //Debug.Log(numero);
     }
     private void Update()
     {
