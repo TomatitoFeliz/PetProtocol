@@ -12,7 +12,7 @@ public class Alimentacion : MonoBehaviour
     float dentroDeVeinteMin;
     public float tresh = 10800f;
     public float veintem = 1200f;
-    public float x = 1;
+    public static float x = 1;
     private void Awake()
     {
         dentroDeVeinteMin = PlayerPrefs.GetFloat("tiemporestarhambre", dentroDeVeinteMin);

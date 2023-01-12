@@ -46,6 +46,7 @@ public class ScriptArbol : MonoBehaviour
 
     public void Restart()
     {
+        Alimentacion.x = 1;
         PlayerPrefs.DeleteAll();
         restart.gameObject.SetActive(false);
         p1.gameObject.SetActive(true);
