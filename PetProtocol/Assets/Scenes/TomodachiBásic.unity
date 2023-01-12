@@ -1244,46 +1244,10 @@ MonoBehaviour:
       - m_Target: {fileID: 508280212}
         m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
         m_MethodName: Izquierda
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1436753390}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 508280212}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Izquierda
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 793063567}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 508280212}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Izquierda
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1251084452}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 508280212}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Izquierda
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 420611001}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1336,9 +1300,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 508280207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3bcc701e8a4a74d8b524bd3299863a, type: 3}
+  m_Script: {fileID: 11500000, guid: de4847a03fbb3964f8a71fa304ac6221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1: {fileID: 1436753390}
+  p2: {fileID: 793063567}
+  p3: {fileID: 1251084452}
+  p4: {fileID: 420611001}
 --- !u!1 &535135967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,46 +2668,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1676657928}
         m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
         m_MethodName: Derecha
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1436753390}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1676657928}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Derecha
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 793063567}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1676657928}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Derecha
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1251084452}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1676657928}
-        m_TargetAssemblyTypeName: Movimiento, Assembly-CSharp
-        m_MethodName: Derecha
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 420611001}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2792,9 +2724,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1676657923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3bcc701e8a4a74d8b524bd3299863a, type: 3}
+  m_Script: {fileID: 11500000, guid: de4847a03fbb3964f8a71fa304ac6221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1: {fileID: 1436753390}
+  p2: {fileID: 793063567}
+  p3: {fileID: 1251084452}
+  p4: {fileID: 420611001}
 --- !u!1 &1861213632
 GameObject:
   m_ObjectHideFlags: 0
